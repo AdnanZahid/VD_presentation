@@ -197,7 +197,7 @@ def neuralInputs(snake_nodes,grid,absolute_direction,food_position):
 
 def getTrainedModel(data, labels):
 
-	# TO DO 2: Write Neural Networks code here!
+	# TO DO 3: Write Neural Networks code here!
     model = Sequential()
     return model
 
@@ -331,7 +331,7 @@ def runGame(death_count,font,model):
         inputs = neuralInputs(snake_nodes,grid,direction,food_position)
         
         # AI controls
-        # TO DO 3: Uncomment this line!
+        # TO DO 2: Uncomment this line!
         # direction,relative_direction = getPredictedDirection(snake_nodes,direction,model,inputs,grid,shuffle_predictions)
 
         previous_distance_between_snake_and_food = distanceBetweenSnakeAndFood(snake_nodes,food_position)
